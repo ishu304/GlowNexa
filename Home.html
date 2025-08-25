@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Prodect Cosmetic</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #fefcea, #f1da36);
+    }
+
+    header {
+      background: #d35400;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 1.2px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 20px;
+    }
+
+    .product-card {
+      background: rgb(184, 170, 170);
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+      width: 240px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 12px;
+      height: 160px;
+      object-fit: cover;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-name {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 14px 0 6px;
+      color: #a04000;
+    }
+
+    .product-price {
+      color: #0c110e;
+      font-size: 16px;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+
+    .buy-btn {
+      background: #e67e22;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 28px;
+      cursor: pointer;
+      border: none;
+      font-weight: 600;
+      transition: background 0.25s ease;
+    }
+
+    .buy-btn:hover {
+      background: #d35400;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>Best Cosmetic Product Ishu</header>
+
+  <div class="product-list">
+
+    <div class="product-card">
+      <img src="/image prodect/1.jpg" alt="Kurkure Snack">
+      <div class="product-name">Vitamin C & Ferulic Acid Serum</div>
+      <br>
+      <div class="product-name">Size: 5ml</div>
+      <br><br>
+      <div class="product-price">₹99 / pack</div>
+      <br><br>
+      <button class="buy-btn" onclick="goToOrder('Kurkure Snack')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/2.jpg" alt="Chicken Burger">
+      <div class="product-name">Lightweight Get
+        <br> Sunscreen- SPF 55+ And PA+++
+      </div>
+      <div class="product-name">Size: 5g</div>
+      <br><br>
+      <div class="product-price">₹119 / piece</div>
+      <br><br>
+      <button class="buy-btn" onclick="goToOrder('Chicken Burger')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/3.jpg" alt="French Fries">
+      <div class="product-name">Azevita SPF 50</div>
+      <br><br>
+      <div class="product-name">Size: 8gms</div>
+      <br><br>
+      <div class="product-price">₹119 / Price</div>
+      <br><br>
+      <button class="buy-btn" onclick="goToOrder('French Fries')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/4.jpg" alt="Organic Apples">
+      <div class="product-name">Healthy Glow Makeup Base</div>
+      <br><br>
+      <div class="product-name">Size: 10gm</div>
+      <br><br>
+      <div class="product-price">₹549 / Price</div>
+      <br><br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/5.jpg" alt="Organic Apples">
+      <div class="product-name">Watermelon Super Glow Gel Face Wash</div>
+      <br><br>
+      <div class="product-name">Size: 15ml</div>
+      <br><br>
+      <div class="product-price">₹139 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/6.jpg" alt="Organic Apples">
+      <div class="product-name">Rice Dewy Bright Face Wash</div>
+      <br><br>
+      <div class="product-name">Size: 20ml</div>
+      <br><br>
+      <div class="product-price">₹149 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/7.jpg" alt="Organic Apples">
+      <div class="product-name">2% Niacinamide Glow Sunscreen SPF 50 PA +++</div>
+      <br><br>
+      <div class="product-name">Size: 8gm</div>
+      <br><br>
+      <div class="product-price">₹249 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/8.jpg" alt="Organic Apples">
+      <div class="product-name">Retiol Under Eye Cream With Vitamin C & Hyaluronic Acid</div>
+      <br>
+      <div class="product-name">Size: 8gms</div>
+      <br><br>
+      <div class="product-price">₹249 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/9.jpg" alt="Organic Apples">
+      <div class="product-name">Clearing Serum</div>
+      <br><br>
+      <div class="product-name">Size: 5ml</div>
+      <br><br>
+      <div class="product-price">₹549 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/10.jpg" alt="Organic Apples">
+      <div class="product-name">Tea Tree Oil Control Face Wash</div>
+      <br>
+      <div class="product-name">Size: 10ml</div>
+      <br><br>
+      <div class="product-price">₹199 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/11.jpg" alt="Organic Apples">
+      <div class="product-name">Green Tea Mattifying Everyday Moisturiser</div>
+      <br>
+      <div class="product-name">Size: 15ml</div>
+      <br><br>
+      <div class="product-price">₹149 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/12.jpg" alt="Organic Apples">
+      <div class="product-name">2% Alpha Aebutin & Hyaluronic Acid Face Serum</div>
+      <br>
+      <div class="product-name">Size: 5ml</div>
+      <br>
+      <div class="product-price">₹189 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/13.jpg" alt="Organic Apples">
+      <div class="product-name">Alpha Vibes pack</div>
+      <br><br><br>
+      <div class="product-name">Size: 2X3ml</div>
+      <br><br>
+      <div class="product-price">₹209 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/14.jpg" alt="Organic Apples">
+      <div class="product-name">Millet Pancake Mix Banana Choco - Chip</div>
+      <br><br>
+      <div class="product-name">Size: 50gms</div>
+      <br><br>
+      <div class="product-price">₹99 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/15.jpg" alt="Organic Apples">
+      <div class="product-name">Raspberry Strawberry Preserve</div>
+      <br><br>
+      <div class="product-name">Size: 40gms</div>
+      <br><br>
+      <div class="product-price">₹89 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/16.jpg" alt="Organic Apples">
+      <div class="product-name">Honey Facial Massage Gel</div>
+      <br><br><br>
+      <div class="product-name">Size: 15gms</div>
+      <br><br>
+      <div class="product-price">₹129 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/17.jpg" alt="Organic Apples">
+      <div class="product-name">Rose & Honey Moisturising Lotion</div>
+      <br><br>
+      <div class="product-name">Size: 200ml</div>
+      <br><br>
+      <div class="product-price">₹269 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/18.jpg" alt="Organic Apples">
+      <div class="product-name">Oat & 1% Ceramide Barrier Love Face Cream</div>
+      <br><br>
+      <div class="product-name">Size: 15gms</div>
+      <br><br>
+      <div class="product-price">₹169 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/image prodect/19.jpg" alt="Organic Apples">
+      <div class="product-name">Acne Deep Clearing Cleanser</div>
+      <br><br>
+      <div class="product-name">Size: 15gms</div>
+      <br><br>
+      <div class="product-price">₹159 / Price</div>
+      <br>
+      <button class="buy-btn" onclick="goToOrder('Organic Apples')">Buy Now</button>
+    </div>
+
+  </div>
+
+  <script>
+    function goToOrder(productName) {
+      window.location.href = "Order.html?product=" + encodeURIComponent(productName);
+    }
+  </script>
+
+</body>
+
+</html>
